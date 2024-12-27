@@ -9,8 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        green: {
+          500: '#75C242',  // warna hijau yang akan digunakan pada button
+        },
+        bone: '#EDF1FD', // warna putih tulang untuk background
+        gray: {
+          600: '#585858', // abu-abu untuk tipografi utama
+          400: '#A9A9A9', // abu-abu muda untuk teks sekunder
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      
       },
     },
   },
