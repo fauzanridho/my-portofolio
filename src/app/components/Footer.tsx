@@ -5,13 +5,13 @@ export default function Footer() {
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-center space-x-6 mb-4">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+          <a href="https://github.com/fauzanridho" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+          <a href="https://linkedin.com/in/fauzanridho" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="mailto:your.email@example.com" className="hover:text-gray-300 transition-colors">
+          <a href="mailto:fauzanridho123456@gmail.com" className="hover:text-gray-300 transition-colors">
             <Mail size={24} />
           </a>
         </div>

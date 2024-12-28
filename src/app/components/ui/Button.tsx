@@ -14,7 +14,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       default: "bg-green-500 text-white hover:bg-green-600",
-      ghost: "bg-transparent text-gray-800 hover:bg-gray-100",
+      ghost: "bg-transparent text-gray-600 hover:bg-green-500 hover:text-white",
     };
 
     const sizes = {

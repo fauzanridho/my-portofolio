@@ -14,7 +14,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ title, description, imageUrl, link, tags }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      <Image src={imageUrl} alt={title} width={300} height={200} className="w-full h-40 object-cover" />
+      <Image src={imageUrl} alt={title} width={300} height={200} className="w-full h-48 object-cover" />
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
