@@ -17,7 +17,7 @@ export default function ProjectsPage() {
 
   // Mengambil data saat komponen dimuat
   useEffect(() => {
-    fetch('http://localhost:3000/projects') // Mengakses endpoint API
+    fetch('http://localhost:3001/projects') // Mengakses endpoint API
       .then((res) => res.json()) // Mengonversi response menjadi JSON
       .then((data) => setProjects(data)) // Menyimpan data ke state
       .catch((error) => console.error('Error fetching projects:', error));
