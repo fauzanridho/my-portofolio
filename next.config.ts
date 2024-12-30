@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       {
         protocol: 'http',
         hostname: '82.112.234.10',
-        pathname: '/images/**',
+        pathname: '/uploads/**',
       },
     ],
   },
