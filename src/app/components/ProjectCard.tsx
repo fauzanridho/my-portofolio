@@ -17,7 +17,7 @@ export default function ProjectCard({ title, description, imageUrl, link, tags }
     <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Gambar dengan penanganan layout dan alt yang sesuai */}
       <Image
-        src={`http://82.112.234.10:3001/${imageUrl}`}
+        src={imageUrl}
         alt={title}
         width={300}
         height={200}
