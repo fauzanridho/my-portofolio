@@ -4,7 +4,7 @@ import clsx from "clsx";
 type ButtonProps = {
   variant?: "default" | "ghost";
   asChild?: boolean;
-  size?: "sm" | "md" | "lg"; // Menambahkan properti size
+  size?: "sm" | "md" | "lg"; // Adding the size property
   className?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -19,17 +19,17 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const sizes = {
       sm: "px-3 py-1 text-sm",
-      md: "px-4 py-2 text-base", // Ukuran default
-      lg: "px-6 py-3 text-lg", // Ukuran besar
+      md: "px-4 py-2 text-base", // Default size
+      lg: "px-6 py-3 text-lg", // Large size
     };
 
     return (
       <Component
-        ref={ref as any} // Type assertion for compatibility with `span`
+        ref={ref as React.Ref<HTMLButtonElement>} // Type assertion for button
         className={clsx(
           "rounded transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
           variants[variant],
-          sizes[size], // Menyesuaikan ukuran button
+          sizes[size], // Adjusting the button size
           className
         )}
         {...props}

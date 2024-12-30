@@ -9,7 +9,7 @@ export default function Hero() {
         {/* Text Section */}
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
-            Hi, I'm Fauzan Ridho
+            Hi, I&apos;m Fauzan Ridho
           </h1>
           <p className="text-lg md:text-xl mb-6">
             A passionate <span className="text-blue-600">Mobile Developer</span> &

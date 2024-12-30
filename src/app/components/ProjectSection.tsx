@@ -4,8 +4,16 @@
 import { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard'; // Import ProjectCard component
 
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+  link: string;
+  tags: string[];
+}
 export default function ProjectsPage() {
-  const [projects, setProjects] = useState<any[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
 
   // Mengambil data saat komponen dimuat
   useEffect(() => {

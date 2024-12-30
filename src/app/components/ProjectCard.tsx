@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/Card";
 import { Button } from "@/app/components/ui/Button";
 import { Badge } from "@/app/components/ui/Badge";
-import Image from 'next/image';
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -16,7 +16,7 @@ export default function ProjectCard({ title, description, imageUrl, link, tags }
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Gambar dengan penanganan layout dan alt yang sesuai */}
-      <img
+      <Image
         src={`http://localhost:3000/${imageUrl}`}
         alt={title}
         width={300}

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 // Simpan data dummy dalam memori
-let projects = [
+const projects = [
   {
     id: '1',
     title: 'Task Manager',
